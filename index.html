@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моё портфолио</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Моё портфолио</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">О себе</a></li>
+                <li><a href="#projects">Проекты</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>О себе</h2>
+            <p>Добро пожаловать в моё портфолио! Я разработчик с навыками HTML, CSS, JavaSkript.Очень буду рада вам помоч в реализици ваших идей в сфере бизнес сайтов </p>
+        </section>
+
+        <section id="projects">
+            <h2>Мои проекты</h2>
+            <ul class="projects-list">
+                <li><a href="">Ссылка на проект 1</a></li>
+                <li><a href="">Ссылка на проект 2</a></li>
+                <li><a href="">Ссылка на проект 3</a></li>
+                <li><a href="">Ссылка на проект 4</a></li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Свяжитесь со мной </h2>
+            <form id="contact-form">
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name">
+                <div class="error-message" id="error-name"></div>
+
+                <label for="email">электронная почта</label>
+                <input type="email" name="email" id="email">
+                <div class="error-message" id="error-email"></div>
+
+                <label for="message">Сообщение</label>
+                <textarea name="message" id="message" rows="5"></textarea>
+                <div class="error-message" id="error-message"></div>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Моё портфолио. Все права защищены.</p>
+        <div class="icon-conteiner">
+            <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://vk.com" target="_blank"><i class="fab fa-vk"></i></a>
+            <a href="https://t.me" target="_blank"><i class="fab fa-telegram"></i></a>
+
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.2.3/purify.min.js" integrity="sha512-Ll+TuDvrWDNNRnFFIM8dOiw7Go7dsHyxRp4RutiIFW/wm3DgDmCnRZow6AqbXnCbpWu93yM1O34q+4ggzGeXVA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="skript.js"></script>
+</body>
+</html>

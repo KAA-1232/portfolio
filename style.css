@@ -1,0 +1,234 @@
+body{
+    font-family: 'Roboto';
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    background: #f4f4f4;
+}
+
+header{
+    background: linear-gradient(to right, #0066cc, #003366);
+    color: #f4f4f4;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgb(206, 203, 203);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1{
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 ;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover{
+    background: #005bb5;
+    color: #777;
+}
+
+main{
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #f4f4f4;
+    box-shadow: 0 4px 8px rgba(206, 203, 203);
+    border-radius: 10px;
+    margin-top: -2rem;
+    overflow: hidden;
+}
+
+section{
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(206, 203, 203);
+    animation: fadeIn 1s ease-in-out;
+}
+
+#about {
+    margin-top: 40px;
+}
+
+section h2 {
+    margin-top: 0;
+    font-size: 2.5rem;
+    color: #0073e6;
+    border-bottom: 2px solid #0073e6;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+section p {
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+ul.projects-list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+ul.projects-list li {
+    background: #fff;
+    border: solid 1px #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(206, 203, 203);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: calc(33 333%- 2rem);
+}
+
+ul.projects-list li:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(206, 203, 203);
+}
+
+ul.projects-list li a {
+    text-decoration: none;
+    color: #0073e6;
+    font-weight: bold;
+}
+
+form{
+    position: relative;
+}
+
+form label{
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+form input, form textarea{
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    transition: border-color, 0.3s;
+}
+
+form input.error, form textarea.error{
+    background-color: red;
+}
+
+.error-message{
+    color: crimson;
+    font-size: 0.07rem;
+    margin-top: 0.25rem;
+    display: none;
+}
+
+form button {
+    background: #0073e6;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 1rem;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+form button:hover{
+    background: #005bb5;
+}
+
+footer{
+    text-align: center;
+    padding: 2rem 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(206, 203, 203);
+}
+
+footer p{
+    margin: 0;
+}
+
+.icon-conteiner{
+    margin-top: 1rem;
+}
+
+.icon-conteiner i {
+    color: #0073e6;
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.icon-conteiner i:hover{
+    color: #012242;
+}
+
+@keyframes fadeIn {
+    form {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@media (max-width: 1024px){
+    
+    ul.projects-list li {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 768px){
+    header  h1{
+       font-size: 2rem;
+       font-weight: 700;
+    }
+
+    main h2 {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0rem 0 ;
+    }
+
+    form {
+        width: 100%;
+    }
+    ul.projects-list li {
+        width: calc(100% - 2rem);
+    }
+}
